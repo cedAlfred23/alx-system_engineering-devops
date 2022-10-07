@@ -1,1 +1,2 @@
 chmod u+x hello Execute
+chmod 733 hello Execute
