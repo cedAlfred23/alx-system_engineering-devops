@@ -1,1 +1,1 @@
-0x00. Shell, basics TASKS
+a script that creates an alias
