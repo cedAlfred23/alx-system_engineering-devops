@@ -1,4 +1,4 @@
-# Configures Nginx to serve the complete AirBnB_clone_v4 application.
+onfigures Nginx to serve the complete AirBnB_clone_v4 application.
 
 server {
     # Listen on port 80.
@@ -43,3 +43,4 @@ server {
         internal;
     }
 }
+
