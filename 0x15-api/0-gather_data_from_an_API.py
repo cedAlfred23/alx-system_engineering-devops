@@ -7,7 +7,7 @@ if __name__ == "__main__":
     if len(argv) != 2:
         print("Usage: python script.py <employee_id>")
         exit(1)
-    
+
     employee_id = argv[1]
     base_url = "https://jsonplaceholder.typicode.com/"
 
@@ -28,15 +28,13 @@ if __name__ == "__main__":
 
     # Filter completed tasks
     completed_tasks = [task["title"] for task in todos if task["completed"]]
-    
+
     # Output progress
     total_tasks = len(todos)
     completed_task_count = len(completed_tasks)
     print(f"Employee {employee_name} is done with tasks ({completed_task_count}/{total_tasks}):")
-    print(f"{employee_name}")
-    print(completed_task_count)
-    print(total_tasks)
+    print(f"EMPLOYEE_NAME: {employee_name}")
+    print(f"NUMBER_OF_DONE_TASKS: {completed_task_count}")
+    print(f"TOTAL_NUMBER_OF_TASKS: {total_tasks}")
     for task in completed_tasks:
-        print(f"\t{task}")
-
-
+        print(f"\t TASK_TITLE: {task}")
