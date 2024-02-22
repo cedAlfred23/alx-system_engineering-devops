@@ -17,7 +17,7 @@ if __name__ == "__main__":
         print("Error: User not found")
         exit(1)
     user = user_response.json()
-    employee_name = user.get('name')
+    employee_name = user.get('name')  # Adjusted to fetch the correct field
 
     # Fetch todos
     todos_response = requests.get(base_url + "todos", params={"userId": employee_id})
@@ -35,4 +35,5 @@ if __name__ == "__main__":
     print(f"Employee {employee_name} is done with tasks ({completed_task_count}/{total_tasks}):")
     for task in completed_tasks:
         print(f"\t{task}")
+
 
