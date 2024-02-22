@@ -33,6 +33,9 @@ if __name__ == "__main__":
     total_tasks = len(todos)
     completed_task_count = len(completed_tasks)
     print(f"Employee {employee_name} is done with tasks ({completed_task_count}/{total_tasks}):")
+    print(f"{employee_name}")
+    print(completed_task_count)
+    print(total_tasks)
     for task in completed_tasks:
         print(f"\t{task}")
 
